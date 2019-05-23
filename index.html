@@ -9,7 +9,7 @@
 <body>
   <header>
     <nav class="navigation">
-        <img src="img/gllacy.svg" width="154" height="64" alt="Логотип магазина мороженого «Глэйси»">
+      <img src="img/gllacy.svg" width="154" height="64" alt="Логотип магазина мороженого «Глэйси»">
       <ul>
         <li><a href="catalog.html">Каталог</a>
           <ul>
@@ -25,19 +25,19 @@
       </ul>
       <div class="user-navigation">
         <p>Поиск по сайту</p>
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <input type="search" name="search-field" placeholder="Что ищем?">
-          </form>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <input type="search" name="search-field" placeholder="Что ищем?">
+        </form>
         <p>Вход</p>
-          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <p><input class="login-in" type="text" name="login" placeholder="Электронная почта"></p>
-            <p><input class="password-in" type="password" name="password" placeholder="Пароль"></p>
-            <button class="button-send" type="submit">Войти</button>
-            <p>
-              <a href="">Забыли пароль ?</a>
-              <a href="">Новая регистрация</a>
-            </p>
-          </form>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="login-in" type="text" name="login" placeholder="Электронная почта">
+          <input class="password-in" type="password" name="password" placeholder="Пароль">
+          <button class="button-send" type="submit">Войти</button>
+          <p>
+            <a href="">Забыли пароль ?</a>
+            <a href="">Новая регистрация</a>
+          </p>
+        </form>
         <p>Корзина</p>
       </div>
       <p class="info-time">С 10 до 20, ежедневно <span>8 812 450-25-25</span></p>
@@ -65,10 +65,10 @@
     <div class="example-items">
       <h2 class="visually-hidden">Пример ассортимента</h2>
       <section class="items">
-        <div><img src="img/orange.png" width="267" height="267" alt="Апельсиновое мороженое"> 310 ₽/кг <a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></div>
-        <div><img src="img/coffee.png" width="267" height="267" alt="Шоколадное мороженое"> 380 ₽/кг <a href="">Сливочно-кофейное с кусочками шоколада</a></div>
-        <div><img src="img/strawberry.png" width="267" height="267" alt="Клубничное мороженое"> 355 ₽/кг <a href="">Сливочно-клубничное с присыпкой из белого шоколада</a></div>
-        <div><img src="img/cream.png" width="267" height="267" alt="Карамельное мороженое"> 415 ₽/кг <a href="">Сливочное крем-брюле с карамельной подливкой</a></div>
+        <div><img src="img/orange.png" width="267" height="267" alt="Апельсиновое мороженое"> <span>310 ₽/кг</span><a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></div>
+        <div><img src="img/coffee.png" width="267" height="267" alt="Шоколадное мороженое"><span>380 ₽/кг</span><a href="">Сливочно-кофейное с кусочками шоколада</a></div>
+        <div><img src="img/strawberry.png" width="267" height="267" alt="Клубничное мороженое"><span>355 ₽/кг</span><a href="">Сливочно-клубничное с присыпкой из белого шоколада</a></div>
+        <div><img src="img/cream.png" width="267" height="267" alt="Карамельное мороженое"><span>315 ₽/кг</span><a href="">Сливочное крем-брюле с карамельной подливкой</a></div>
       </section>
     </div>
     <section class="advantages">
@@ -129,9 +129,9 @@
   </footer>
   <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
     <p>Мы обязательно вам ответим!</p>
-    <p><label for="appointment-name"></label><input type="text" id="appointment-name" placeholder="Как вас зовут?" name="user-name"></p>
-    <p><label for="appointment-email"></label><input type="text" id="appointment-email" placeholder="Ваша почта для ответа?" name="user-email"></p>
-    <p><label for="appointment-txt"></label><input type="text" id="appointment-txt" placeholder="Напишите что-нибудь..." name="user-speech"></p>
+    <div><label for="appointment-name"></label><input type="text" id="appointment-name" placeholder="Как вас зовут?" name="user-name"></div>
+    <div><label for="appointment-email"></label><input type="text" id="appointment-email" placeholder="Ваша почта для ответа?" name="user-email"></div>
+    <div><label for="appointment-txt"></label><input type="text" id="appointment-txt" placeholder="Напишите что-нибудь..." name="user-speech"></div>
     <button class="button-send" type="submit">Отправить</button>
   </form>
 </body>
