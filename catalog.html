@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -12,30 +15,42 @@
       <a class="header-logo">
         <img src="img/gllacy.svg" width="154" height="64" alt="Логотип магазина мороженого «Глэйси»">
       </a>
-      <ul>
-        <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
+      <ul class="main-navigation">
+        <li class="site-navigation-current"><a class="main-navigation-active">Каталог</a></li>
         <li><a href="delievery.html">Доставка и оплата</a></li>
         <li><a href="about_сompany.html">О Компании</a></li>
       </ul>
       <div class="user-navigation">
-        <p>Поиск по сайту</p>
-        <p>Вход</p>
-        <p>Корзина</p>
+        <p class="search">Поиск по сайту</p>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="input" type="search" name="search-field" placeholder="Что ищем?">
+        </form>
+        <button type="button" class="main-nav-btn">Вход</button>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="input login-in" type="text" name="login" placeholder="Электронная почта">
+          <input class="input password-in" type="password" name="password" placeholder="Пароль">
+          <button class="button-send" type="submit">Войти</button>
+          <p>
+            <a href="">Забыли пароль ?</a>
+            <a href="">Новая регистрация</a>
+          </p>
+        </form>
+        <button type="button" class="no-empty-basket main-nav-btn">2 товара</button>
         <form class="basket-form" action="https://echo.htmlacademy.ru" method="post">
           <table class="order-table">
             <tr>
               <td class="type-icecream">Пломбир с апельсиновым джемом</td>
-              <td class="weight-price-icecream">1,5 кг х 200 руб.</td>
+              <td class="weight-price-icecream">1,5 кг х <span>200 руб.</span></td>
               <td class="total-price-icecream">300 руб.</td>
             </tr>
             <tr>
               <td class="type-icecream">Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td class="weight-price-icecream">1,5 кг х 300 руб.</td>
+              <td class="weight-price-icecream">1,5 кг х <span>300 руб.</span></td>
               <td class="total-price-icecream">450 руб.</td>
             </tr>
           </table>
           <p>Итого: 750 руб.</p>
-          <button class="button" type="buttom">Оформить заказ</button>
+          <button class="button-send" type="buttom">Оформить заказ</button>
         </form>
       </div>
       <p class="info-time">С 10 до 20, ежедневно <span>8 812 450-25-25</span></p>
@@ -43,9 +58,9 @@
   </header>
   <main class="container">
     <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li class="breadcrumbs-current">Сливочное</li>
+      <li><a class="glacy-att" href="index.html">Главная</a></li>
+      <li><a class="glacy-att" href="catalog.html">Каталог</a></li>
+      <li class="breadcrumbs-current"><a>Сливочное</a></li>
     </ul>
     <h2>Сливочное мороженое</h2>
     <section class="filter-item">
@@ -53,24 +68,25 @@
     </section>
     <section class="catalog-item">
       <section class="items">
-        <div><img src="img/orange.png" width="267" height="267" alt="Апельсиновое мороженое"> <span>310 ₽/кг</span><a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></div>
-        <div><img src="img/coffee.png" width="267" height="267" alt="Шоколадное мороженое"><span>380 ₽/кг</span><a href="">Сливочно-кофейное с кусочками шоколада</a></div>
-        <div><img src="img/strawberry.png" width="267" height="267" alt="Клубничное мороженое"><span>355 ₽/кг</span><a href="">Сливочно-клубничное с присыпкой из белого шоколада</a></div>
-        <div><img src="img/cream.png" width="267" height="267" alt="Карамельное мороженое"><span>315 ₽/кг</span><a href="">Сливочное крем-брюле с карамельной подливкой</a></div>
-        <div><img src="img/ice-1.png" width="267" height="267" alt="Брусничное мороженое"><span>325 ₽/кг</span><a href="">Сливочное с брусничным джемом</a></div>
-        <div><img src="img/ice-2.png" width="267" height="267" alt="Черничное мороженое"><span>410 ₽/кг</span><a href="">Сливочно-черничное с цельными ягодами черники </a></div>
-        <div><img src="img/ice-3.png" width="267" height="267" alt="Лимонное мороженое"><span>475 ₽/кг</span><a href="">Сливочно-лимонное с карамельной присыпкой</a></div>
-        <div><img src="img/ice-4.png" width="267" height="267" alt="Мороженое с шоколадной стружкой"><span>320 ₽/кг</span><a href="">Сливочное с шоколадной стружкой</a></div>
-        <div><img src="img/ice-5.png" width="267" height="267" alt="Ванильное мороженое"><span>440 ₽/кг</span><a href="">Сливочно-ванильное с кусочками шоколада</a></div>
-        <div><img src="img/ice-6.png" width="267" height="267" alt="Мороженое с ментоловым сиропом"><span>435 ₽/кг</span><a href="">Сливочноe с ментоловым сиропом</a></div>
-        <div><img src="img/ice-7.png" width="267" height="267" alt="Мороженое с кусочками черного шоколада"><span>355 ₽/кг</span><a href="">Сливочное с кусочками черного шоколада</a></div>
-        <div><img src="img/ice-8.png" width="267" height="267" alt="Мороженое с мятным сиропом"><span>420 ₽/кг</span><a href="">Сливочное с мятным сиропом</a></div>
+        <div><img src="img/orange.png" width="267" height="267" alt="Апельсиновое мороженое"> <span>310 ₽/кг</span><a class="glacy-att" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a><button class="btn-visible button-send" type="button">Быстрый просмотр</button></div>
+        <div><img src="img/coffee.png" width="267" height="267" alt="Шоколадное мороженое"><span>380 ₽/кг</span><a class="glacy-att" href="">Сливочно-кофейное с кусочками шоколада</a><button class="btn-visible button-send" type="button">Быстрый просмотр</button></div>
+        <div><img src="img/strawberry.png" width="267" height="267" alt="Клубничное мороженое"><span>355 ₽/кг</span><a class="glacy-att" href="">Сливочно-клубничное с присыпкой из белого шоколада</a><button class="btn-visible button-send" type="button">Быстрый просмотр</button></div>
+        <div><img src="img/cream.png" width="267" height="267" alt="Карамельное мороженое"><span>315 ₽/кг</span><a class="glacy-att" href="">Сливочное крем-брюле с карамельной подливкой</a><button class="btn-visible button-send" type="button">Быстрый просмотр</button></div>
+        <div><img src="img/ice-1.png" width="267" height="267" alt="Брусничное мороженое"><span>325 ₽/кг</span><a class="glacy-att" href="">Сливочное с брусничным джемом</a><button class="btn-visible button-send" type="button">Быстрый просмотр</button></div>
+        <div><img src="img/ice-2.png" width="267" height="267" alt="Черничное мороженое"><span>410 ₽/кг</span><a class="glacy-att" href="">Сливочно-черничное с цельными ягодами черники </a><button class="btn-visible button-send" type="button">Быстрый просмотр</button></div>
+        <div><img src="img/ice-3.png" width="267" height="267" alt="Лимонное мороженое"><span>475 ₽/кг</span><a class="glacy-att" href="">Сливочно-лимонное с карамельной присыпкой</a><button class="btn-visible button-send" type="button">Быстрый просмотр</button></div>
+        <div><img src="img/ice-4.png" width="267" height="267" alt="Мороженое с шоколадной стружкой"><span>320 ₽/кг</span><a class="glacy-att" href="">Сливочное с шоколадной стружкой</a><button class="btn-visible button-send" type="button">Быстрый просмотр</button></div>
+        <div><img src="img/ice-5.png" width="267" height="267" alt="Ванильное мороженое"><span>440 ₽/кг</span><a class="glacy-att" href="">Сливочно-ванильное с кусочками шоколада</a><button class="btn-visible button-send" type="button">Быстрый просмотр</button></div>
+        <div><img src="img/ice-6.png" width="267" height="267" alt="Мороженое с ментоловым сиропом"><span>435 ₽/кг</span><a class="glacy-att" href="">Сливочноe с ментоловым сиропом</a><button class="btn-visible button-send" type="button">Быстрый просмотр</button></div>
+        <div><img src="img/ice-7.png" width="267" height="267" alt="Мороженое с кусочками черного шоколада"><span>355 ₽/кг</span><a class="glacy-att" href="">Сливочное с кусочками черного шоколада</a><button class="btn-visible button-send" type="button">Быстрый просмотр</button></div>
+        <div><img src="img/ice-8.png" width="267" height="267" alt="Мороженое с мятным сиропом"><span>420 ₽/кг</span><a class="glacy-att" href="">Сливочное с мятным сиропом</a><button class="btn-visible button-send" type="button">Быстрый просмотр</button></div>
       </section>
-      <ul class="pagination-list">
+      <ol class="pagination-list">
         <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-        <li class="pagination-item"><a>2</a></li>
+        <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
         <li class="pagination-item"><a href="#">4</a></li>
+      </ol>
     </section>
   </main>
   <footer>
