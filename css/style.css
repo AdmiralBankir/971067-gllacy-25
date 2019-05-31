@@ -104,15 +104,22 @@ a {
   background-repeat: no-repeat;
 }
 
-.items a {
+.item-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+}
+
+.items span:nth-of-type(2) {
   text-align: center;
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.items span {
+.items span:nth-of-type(1) {
   font-size: 45px;
   line-height: 45px;
+  color: #ffffff;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 
@@ -388,10 +395,26 @@ a {
   min-height: 405px;
 }
 
-.items div:hover {
-  opacity: 0.2;
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-  background-color: #f8f7f4;
+.ice-item {
+  position: relative;
+}
+
+.ice-item a {
+  display: inline-block;
+}
+
+.ice-item:hover .overlay {
+  display: block;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: -6px;
+  left: -13px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .no-empty-basket {
