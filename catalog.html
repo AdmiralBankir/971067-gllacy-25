@@ -12,48 +12,54 @@
 <body>
   <header>
     <nav class="navigation">
-      <a class="header-logo" href="index.html">
-        <img src="img/gllacy.svg" width="154" height="64" alt="Логотип магазина мороженого «Глэйси»">
-      </a>
-      <ul class="main-navigation">
-        <li class="site-navigation-current"><a class="main-navigation-active">Каталог</a></li>
-        <li><a href="delievery.html">Доставка и оплата</a></li>
-        <li><a href="about_сompany.html">О Компании</a></li>
-      </ul>
-      <div class="user-navigation">
-        <p class="search">Поиск по сайту</p>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="input" type="search" name="search-field" placeholder="Что ищем?">
-        </form>
-        <button type="button" class="main-nav-btn">Вход</button>
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="input login-in" type="text" name="login" placeholder="Электронная почта">
-          <input class="input password-in" type="password" name="password" placeholder="Пароль">
-          <button class="button-send" type="submit">Войти</button>
-          <p>
-            <a href="">Забыли пароль ?</a>
-            <a href="">Новая регистрация</a>
-          </p>
-        </form>
-        <button type="button" class="no-empty-basket main-nav-btn">2 товара</button>
-        <form class="basket-form" action="https://echo.htmlacademy.ru" method="post">
-          <table class="order-table">
-            <tr>
-              <td class="type-icecream">Пломбир с апельсиновым джемом</td>
-              <td class="weight-price-icecream">1,5 кг х <span>200 руб.</span></td>
-              <td class="total-price-icecream">300 руб.</td>
-            </tr>
-            <tr>
-              <td class="type-icecream">Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td class="weight-price-icecream">1,5 кг х <span>300 руб.</span></td>
-              <td class="total-price-icecream">450 руб.</td>
-            </tr>
-          </table>
-          <p>Итого: 750 руб.</p>
-          <button class="button-send" type="buttom">Оформить заказ</button>
-        </form>
+      <div class="container">
+        <div class="site-nav-container">
+          <a class="header-logo" href="index.html">
+            <img src="img/gllacy.svg" width="154" height="64" alt="Логотип магазина мороженого «Глэйси»">
+          </a>
+          <ul class="main-navigation">
+            <li class="site-navigation-current"><a class="main-navigation-active">Каталог</a></li>
+            <li><a href="delievery.html">Доставка и оплата</a></li>
+            <li><a href="about_сompany.html">О Компании</a></li>
+          </ul>
+        </div>
+        <div class="user-navigation">
+          <button type="button" class="main-nav-btn">S</button>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="input" type="search" name="search-field" placeholder="Что ищем?">
+          </form>
+          <button type="button" class="main-nav-btn">Вход</button>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="input login-in" type="text" name="login" placeholder="Электронная почта">
+            <input class="input password-in" type="password" name="password" placeholder="Пароль">
+            <button class="button-send" type="submit">Войти</button>
+            <p>
+              <a href="">Забыли пароль ?</a>
+              <a href="">Новая регистрация</a>
+            </p>
+          </form>
+          <button type="button" class="no-empty-basket main-nav-btn">2 товара</button>
+          <form class="basket-form" action="https://echo.htmlacademy.ru" method="post">
+            <table class="order-table">
+              <tr>
+                <td class="type-icecream">Пломбир с апельсиновым джемом</td>
+                <td class="weight-price-icecream">1,5 кг х <span>200 руб.</span></td>
+                <td class="total-price-icecream">300 руб.</td>
+              </tr>
+              <tr>
+                <td class="type-icecream">Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td class="weight-price-icecream">1,5 кг х <span>300 руб.</span></td>
+                <td class="total-price-icecream">450 руб.</td>
+              </tr>
+            </table>
+            <p>Итого: 750 руб.</p>
+            <button class="button-send" type="buttom">Оформить заказ</button>
+          </form>
+        </div>
       </div>
-      <p class="info-time">С 10 до 20, ежедневно <span>8 812 450-25-25</span></p>
+      <div class="container_p">
+        <p class="info-time"><span>С 10 до 20, ежедневно</span><span>8 812 450-25-25</span></p>
+      </div>
     </nav>
   </header>
   <main class="container">
@@ -66,8 +72,8 @@
     <section class="filter-item">
       Фильтр товаров
     </section>
-    <section class="catalog-item">
-      <section class="items">
+    <section class="container catalog-item">
+      <section class="items inner-items">
         <div class="ice-item"><a href=""><img src="img/orange.png" width="267" height="267" alt="Апельсиновое мороженое"> <span>310 ₽/кг</span><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
           <div class="overlay"><button class="item-btn button-send" type="button">Быстрый просмотр</button></div>
         </div>
@@ -115,35 +121,39 @@
               просмотр</button></div>
         </div>
       </section>
-      <ol class="pagination-list">
-        <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-        <li class="pagination-item"><a href="#">2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a href="#">4</a></li>
-      </ol>
+      <div class="container_p">
+        <ol class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">4</a></li>
+        </ol>
+      </div>
     </section>
   </main>
-  <footer>
-    <div class="footer-social">
-      <ul>
-        <li><a class="social-btn" href="#">Твиттер</a></li>
-        <li><a class="social-btn" href="#">Инстаграм</a></li>
-        <li><a class="social-btn" href="#">Фейсбук</a></li>
-        <li><a class="social-btn" href="#">ВКонтакте</a></li>
-      </ul>
+  <footer class="main-footer inner-footer">
+    <div class="container">
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-btn " href="#">Твиттер</a></li>
+          <li><a class="social-btn" href="#">Инстаграм</a></li>
+          <li><a class="social-btn" href="#">Фейсбук</a></li>
+          <li><a class="social-btn" href="#">ВКонтакте</a></li>
+        </ul>
+      </div>
+      <div class="footer-reference">
+        <ul class="reference-list">
+          <li><a class="glacy-att" href="#">Для поставщиков</a></li>
+          <li><a class="glacy-att" href="#">Наши документы</a></li>
+          <li><a class="glacy-att" href="#">О производстве</a></li>
+          <li><a class="glacy-att" href="#">Экологические стандарты</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="Логотип HTML Academy"></img></a>
+        <span>Сделано в HTML Academy © 2019</span>
+      </p>
     </div>
-    <div class="footer-reference">
-      <ul class="reference-list">
-        <li><a class="glacy-att" href="#">Для поставщиков</a></li>
-        <li><a class="glacy-att" href="#">Наши документы</a></li>
-        <li><a class="glacy-att" href="#">О производстве</a></li>
-        <li><a class="glacy-att" href="#">Экологические стандарты</a></li>
-      </ul>
-    </div>
-    <p class="footer-copyright">
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="" alt="Логотип HTML Academy"></img></a>
-      <span>Сделано в HTML Academy © 2019</span>
-    </p>
   </footer>
 </body>
 
