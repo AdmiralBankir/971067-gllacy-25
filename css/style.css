@@ -424,6 +424,7 @@ a {
 .main-navigation a:hover {
   color: #333333;
   background-color: #f7f6f3;
+  padding: 6px 13px;
   border-radius: 20px;
 }
 
@@ -450,6 +451,7 @@ a {
   color: #ffffff;
   border-radius: 20px;
   background-color: #d07058;
+  padding: 6px 13px;
 }
 
 .main-navigation a:active {
@@ -468,14 +470,20 @@ a {
 
 .user-navigation button:nth-of-type(1) {
   width: 33px;
+  height: 33px;
+  border-radius: 50%;
 }
 
 .user-navigation button:nth-of-type(2) {
-  width: 94px;
+  width: 93px;
+  height: 32px;
+  padding-right: 15px;
 }
 
 .user-navigation button:nth-of-type(3) {
-  width: 100px;
+  width: 117px;
+  height: 32px;
+  padding-right: 17px;
 }
 
 .main-nav-btn:hover {
@@ -561,6 +569,11 @@ a {
 
 .footer-social ul {
   list-style: none;
+}
+
+.footer-social li {
+  width: 38px;
+  height: 38px;
 }
 
 .pagination-list {
@@ -661,7 +674,7 @@ a {
 }
 
 .user-navigation {
-  width: 245px;
+  width: 262px;
   display: flex;
   justify-content: space-between;
   align-items: center;
